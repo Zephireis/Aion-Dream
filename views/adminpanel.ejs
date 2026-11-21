@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/aion/scripts/adminpanel.js"></script>
+    <script src="https://kit.fontawesome.com/6300446ff0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/adminpanel.css">
+    <link rel="stylesheet" href="/aion/css/adminpanel.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div class="wrapper">
+        <div class="section">
+            <div class="top_navbar">
+                <div class="hamburger">
+                    <a href="#">
+                        <i class="fas fa-bars"></i>
+
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="sidebar">
+            <div class="profile">
+                <img src="https://i0.wp.com/sbcf.fr/wp-content/uploads/2018/03/sbcf-default-avatar.png?ssl=1 alt="alt="profile_picture"">
+                <h3>Administrator</h3>
+
+                <p></p>
+                <ul class="dash-menu">
+
+                    <li>
+                        <a href="#" class="active">
+                            <span class="icon"><i class="fas fa-desktop"></i></span>
+                            <span class="item">Administrator Panel</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/dashboard">
+                            <span class="icon"><i class="fas fa-desktop"></i></span>
+                            <span class="item">Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/dashboard">
+                            <span class="icon"><i class="fas fa-desktop"></i></span>
+                            <span class="item">Add Team Member</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/dashboard">
+                            <span class="icon"><i class="fas fa-desktop"></i></span>
+                            <span class="item">Create Job Dept.</span>
+                        </a>
+                    </li>
+
+
+                </ul>
+            </div>
+            </div>
+    </div>
+    <div class="main-container" >
+        <div id="meta-information" class="top-box">
+            <div class="adminbox requests">
+                <div class="p-title">
+                    <p class="p-title-text">Mailbox(soon)</p>
+
+                </div>
+
+            </div>
+            <div class="adminbox whos-in">
+                <div class="p-title">
+                    <p class="p-title-text">On Duty</p>
+
+                </div>
+
+                    <div class="emp-information" id="#informations">
+
+                        <table style="width:100%">
+                            <% for (var i = 0; i < clockedinEmps.length; i++) { %>
+                            <tr>
+                              <td><img class="pfp" src="https://i0.wp.com/sbcf.fr/wp-content/uploads/2018/03/sbcf-default-avatar.png?ssl=1%20alt=" alt=""></td>
+                              <td id="<%=[i]%>"><%=clockedinEmps[i]%></td>
+                              <td>7:00 PM</td>
+
+                              <td><button class="<%=[i]%> "id="clockoutbtn">clockout</button></td>
+                            </tr>
+                            <% } %>
+
+
+
+                          </table>
+                    </div>
+
+
+
+
+
+
+
+
+
+            </div>
+            <div class="adminbox create-task">
+                <div class="p-title">
+                    <p class="p-title-text">Create task (soon)</p>
+
+                </div>
+
+
+            </div>
+            <div class="organization-information-container">
+                <div class="organization-information">
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+</body>
+</html>

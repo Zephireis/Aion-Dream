@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap');
+
+*{
+    margin: 0;
+}
+
+body {
+    /* background-color: rgb(162, 94, 226); */
+    background: rgb(157,21,21);
+    background: linear-gradient(90deg, rgba(157,21,21,1) 0%, rgba(156,73,111,1) 74%, rgba(122,70,161,1) 100%);
+    font-family: 'Poppins';
+}
+/* 
+.navigation{
+ 
+    height: 1px;
+    width: 20px;
+    background-color: red;
+} */
+
+/* .navigation{
+    position: static;
+    height: 400px;
+    width: 20px;
+  
+    
+    background-color: red;
+} */
+
+
+.sidebar {
+    height: 100%;
+    width: 50px;
+    position: absolute;
+    left: 0;
+    top: 0px;
+
+    padding-top: 10px;
+    background-color:rgb(218, 42, 42)
+    }
+    
+    .sidebar div {
+    padding: 0px 8px 0px 8px;
+    font-size: 30px;
+    /* display: block; */
+    color: rgb(255, 255, 255);
+    line-height: 80px;
+    }
+    
+    .body-text {
+    margin-left: 150px;
+    font-size: 18px;
+    }
+
+
+.container{
+    position: relative;
+    margin: auto;
+    margin-top: 20rem;
+
+    width: 20rem;
+    height: 20rem;
+    
+
+    
+}
+
+.clock-in-btn{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#btn{
+    background-color: transparent;
+    padding: 20px 50px 20px;
+    cursor: pointer;
+    border: 2px solid rgba(255, 255, 255, 0.479);
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+}
+
+#confirm-btn{
+  
+    background-color: transparent;
+    padding: 20px 50px 20px;
+    cursor: pointer;
+    border: 2px solid rgba(255, 255, 255, 0.479);
+    border-radius: 5px;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+}
+
+#btn:hover{
+    background-color: rgba(100, 100, 100, 0.178);
+    
+}
+
+
+.container2{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin: auto;
+    margin-top: 0%;
+    width: 20rem;
+    left: 8px;
+    margin-top: 15rem;
+
+
+    
+}
+
+
+.number{
+    border: solid;
+    border-width: thin;
+    width: 100px;
+    border-color: rgba(173, 173, 173, 0.637);
+    width: 100px;
+    height: 70px;
+    text-align: center;
+    /* margin: auto; */
+    margin-top: 0px;
+    background-color: white;
+    /* display: none; */
+
+
+}
+
+.number:hover{
+    background-color: rgba(224, 224, 224, 0.884);
+    cursor: pointer;
+}
+
+.int{
+    margin-top: 25%;
+    color: rgb(88, 88, 88);
+    font-weight: bolder;
+
+    
+}
+
+.pin-input{
+    position: relative;
+    width: 99%;
+    margin: auto;
+    line-height: 1;
+    
+    
+    
+}
+
+
+
+.passcode {
+     width: 97%;
+     height: 30px;
+     border: none;
+     
+
+     color: rgba(255, 255, 255, 0.89);
+     font-size: 80px;
+     font-family: 'Poppins';
+     letter-spacing: 21px;
+     text-align: center;
+     background-color: rgba(255, 0, 0, 0);
+     
+     
+     
+     
+
+}
+
+.passcode::placeholder{
+    color: rgba(255, 255, 255, 0.596);
+    font-size: 18px;
+    padding: 5px;
+}
+
+#fuck{
+    position: absolute;
+    background-color: rgba(0, 38, 255, 0);
+    margin-top: 21rem;
+    margin-left: 105px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.527);
+    padding: 10px 20px 10px 20px;
+    color: white;
+    display: none;
+
+}
+#fuck:hover{
+background-color: rgba(69, 39, 97, 0.575);
+
+}
+
+.time-wrapper {
+    position: absolute;
+    width: 450px;
+    height: 100px;
+    margin-top: 12%;
+    margin-left: 7rem;
+    text-align: center;
+   
+    
+}
+
+.Time {
+    font-family: Poppins;
+    color: rgb(255, 255, 255);
+    font-size: 80px;
+    text-align: center;
+}
+
+a {
+    color: white;
+}
+
+
+
+.confirm-clock{
+    position: relative;
+    margin: auto;
+    margin-top: 9rem;
+    background-color:rgb(80, 51, 92);
+    width: 450px;
+    height: 150px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#confirm-btn:hover{
+    background-color: rgba(96, 84, 107, 0.678);
+}

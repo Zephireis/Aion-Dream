@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Clock</title>
+</head>
+<body>
+    <div class="container">
+        <div class="clock-in-btn">
+            <button id="btn" type="button">Clock In</button>
+        </div>
+    </div>
+    <div class="container2" style="display:none;">
+        <div class="pin-input">
+        <form method="POST">
+            <label for="pass">enter your pin</label>
+            <input class="passcode" type="password" id="pass" name="pin" maxlength="4" size="4"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+        
+        </div>
+        <!-- <div class="number">
+            <p>7</p>
+        </div>
+        <div class="number">
+            <p>8</p>
+        </div>
+        <div class="number">
+            <p>9</p>
+        </div>
+        <div class="number">
+            <p>4</p>
+        </div>
+        <div class="number">
+            <p>5</p>
+        </div>
+        <div class="number">
+            <p>6</p>
+        </div>
+        <div class="number">
+            <p>1</p>
+        </div>
+        <div class="number">
+            <p>2</p>
+        </div>
+        <div class="number">
+            <p>3</p>
+        </div> -->
+        
+    </div>
+    <div id="timer"></div>
+    <div id ="stop_timer" onclick="clearInterval(timerVar)">Stop time</div>
+    
+</body>
+</html>

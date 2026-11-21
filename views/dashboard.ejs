@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <script src="/employeepage.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/aion/scripts/dashboard.js"></script>
+    <script src="https://kit.fontawesome.com/6300446ff0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="/aion/css/dashboard.css">
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- create compmany = cc -->
+    <div id="cc" style="display: none;">
+        <div class="create-company">
+            <form  method="POST">
+
+                <label for="company">Organization name</label><br>
+                <input class="orgInput" type="text" id="company_name" name="company" placeholder="Example LLC*"><br><br>
+                <label for="password">Organization type<p id="example-p">Example: Web Hosting or Bakery</p></label>
+                <input class="orgInput" type="text" id="password" name="type" placeholder="pet grooming"><br><br>
+                <label class="labely" for="position">Position<p id="example-p">Example: Senior Developer</p></label>
+                <input class="orgInput" type="text" id="position" name="position" placeholder="Manager"><br>
+
+
+                <div class="submit-btn">
+                    <input class="submit-org-btn" type="submit" value="Submit">
+                </div>
+
+
+            </form>
+
+
+        </div>
+
+    </div>
+
+    <div class="wrapper">
+        <div class="section">
+            <div class="top_navbar">
+                <div class="hamburger">
+                    <a href="#">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="sidebar">
+            <div class="profile">
+                <div class="camera-icon-btn">
+                    <i class="fa fa-camera upload-button"></i>
+                    <input class="file-upload" type="file" accept="image/*"/>
+                </div>
+                <form method="post" enctype="multipart/form-data" action="/dashboard">
+                    <div class="avatarpic">
+                        <img class="profile-pic-avatar" src="https://i.imgur.com/bhERIEX.png" alt="">
+                    </div>
+                </form>
+
+
+                <h3><%=empname%></h3>
+                <p></p>
+                <ul class="dash-menu">
+
+                    <li class="test">
+                        <a href="#" class="active">
+                            <span class="icon"><i class="fas fa-desktop"></i></span>
+                            <span class="item">Dashboard</span>
+                        </a>
+                    </li>
+                    <% if (admin == "true") { %>
+                    <li>
+                        <a href="/adminpanel">
+                            <span class="icon"><i class="fas fa-desktop"></i></span>
+
+                            <span class="item">Administrator Panel</span>
+                            <%} else { %>
+                            <!-- no element shown-->
+                            <% } %>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/homebase">
+                            <span class="icon"><i class="fas fa-desktop"></i></span>
+                            <span class="item">Homebase</span>
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a>
+                            <span class="icon"><i class="fas fa-desktop"></i></span>
+
+                            <span id="createco-btn" class="item">Start Organization</span>
+
+                        </a>
+                    </li>
+
+                </ul>
+                <div class="signoutdiv">
+                    <a class="signoutbtn"href="/logout">Log Out <i class="fa fa-sign-out" aria-hidden="true"></i></a>
+
+                </div>
+
+            </div>
+
+            </div>
+
+            <div class="dashboard-wrapper">
+                <div class="generalstats-wrapper">
+                    <div class="stat-box" id="totalhours">
+                        <div class="box-text-stats">
+                            <p class='top-p' id="hours"><%=totalHours%></p>
+                            <p  class='bottom-p' id="totalworked">Total Hours</p>
+                        </div>
+                    </div>
+                    <div class="stat-box" id="totalearned">
+                        <div class="box-text-stats">
+                            <p class='top-p' id="hours-this-week">0</p>
+                            <p  class='bottom-p' id="week-total">Hours this week(coming soon)</p>
+                        </div>
+                    </div>
+                    <div class="stat-box" id="total-sessions">
+                        <div class="box-text-stats">
+                            <p class='top-p' id="overall-sessions"><%=totalSessions%></p>
+                            <p  class='bottom-p' id="totalworked">Total Sessions</p>
+                        </div>
+                    </div>
+                    <div class="stat-box" id="week-sessions">
+                        <div class="box-text-stats">
+                            <p class='top-p' id="sessions-this-week">0</p>
+                            <p  class='bottom-p' id="totalworked">Weekly Sessions(coming soon)</p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="stats-wrapper">
+                    <div class="statbox account-info">
+                        <div class="user-information">
+                            <p class="box-title">Account information</p>
+                        </div>
+                        <div class="text-boxes info-text">
+                            <div class="empdetails">
+                                <span class="deets">Account Register Date: <%=regDate%></span><br>
+                                <span class="deets">Organization : <%=Org%></span><br>
+                                <span class="deets">Position: <%=position%> </span><br>
+                                <span class="deets">User Pin: <%=accountPin%></span><br>
+                                <span class="deets">Rate: Hourly</span><br>
+                                <span class="deets">Total Hours Worked: <%=totalhours%></span><br>
+                                <span class="deets"></span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="statbox clock-log">
+                        <div class="timeclock-log">
+                            <p class="box-title">Timeclock log</p>
+                        </div>
+                        <div class="text-boxes timelog">
+                            <div class="emplogs">
+                                <table class="emplogtable"style="width:100%">
+
+                                    <tr>
+                                      <th>Date</th>
+                                      <th>Job</th>
+                                      <th>In</th>
+                                      <th>Out</th>
+                                      <th>Hours</th>
+                                    </tr>
+                                    <% for (var i = 0; i < rows.length; i++) { %>
+                                        <tr>
+                                            <td><%= rows[i].date%></td>
+                                            <td></td>
+                                            <td><%= rows[i].clock_in%></td>
+                                            <td><%= rows[i].clock_out%></td>
+                                            <td><%= rows[i].hours%></td>
+
+                                          </tr>
+                                  <%  } %>
+
+                                  </table>
+
+
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+                <div class="addorg-wrapper" style="display:none;">
+                    <div class="popup">
+                        <!-- <p>Travis Clark has been added</p> -->
+                    </div>
+                    <div class="continue-btn">
+                        <input class="continue" type="submit" value="continue">
+                    </div>
+
+            </div>
+
+
+
+            </div>
+
+
+
+
+</body>
+</html>
