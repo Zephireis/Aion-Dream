@@ -4,7 +4,7 @@ A full-stack timesheet and employee hour-tracking web application built with Nod
 
 ## Features
 
-- **Employee Registration & Login**: Creates user accounts with `bcrypt` password hashing, tracks session state via `express-session`, and routes authenticated users to `/dashboard`[cite: 1, 8].
+- **Employee Registration & Login**: Creates user accounts with `bcrypt` password hashing, tracks session state via `express-session`, and routes authenticated users to `/dashboard`.
 - **PIN-Based Time Clock & Kiosk Flow**: Supports `/homebase`, `/clockin`, and `/clockout` flows using employee PINs, numeric keypad input, live clock display, and `on` / `off` status checks[cite: 4, 5, 6, 7].
 - **Per-Employee Session Timers**: Tracks active shift start times and elapsed durations per employee PIN so multiple users can clock in and out independently without overwriting shared state[cite: 5, 6, 7, 8].
 - **Dashboard & Organization Setup**: Displays employee summary cards (Total Hours, Hours This Week, Total Sessions, Weekly Sessions), account details, organization setup (`POST /dashboard`), and the **Timeclock log** (`Date`, `Job`, `In`, `Out`, `Hours`)[cite: 2, 8].
@@ -18,9 +18,9 @@ A full-stack timesheet and employee hour-tracking web application built with Nod
 
 
 ### Dashboard & Organization Setup
-![Dashboard with organization setup modal](screenshots/Screenshot%202026-11-21%20190822.png)[cite: 2]
+![Dashboard with organization setup modal](screenshots/Screenshot%202026-11-21%20190822.png)[
 
-![Dashboard organization modal view](screenshots/Screenshot%202026-11-21%20190838.png)[cite: 3]
+![Dashboard organization modal view](screenshots/Screenshot%202026-11-21%20190838.png)
 
 ### Homebase Keypad & Clock-In Flow
 ![Homebase organization keypad screen](screenshots/Screenshot%202026-11-21%20190856.jpg)[cite: 4]
