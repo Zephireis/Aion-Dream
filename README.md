@@ -14,7 +14,8 @@ A full-stack timesheet and employee hour-tracking web application built with Nod
 ## Screenshots
 
 ### Landing & Welcome Screen
-![Aion welcomes you landing screen](screenshots/Screenshot%202026-11-21%20190717.jpg)[cite: 1]
+<img width="1919" height="1079" alt="Screenshot 2026-11-21 190717" src="https://github.com/user-attachments/assets/0db28c4b-ee1d-41fe-9f56-f5baf8a5baa7" />
+
 
 ### Dashboard & Organization Setup
 ![Dashboard with organization setup modal](screenshots/Screenshot%202026-11-21%20190822.png)[cite: 2]
