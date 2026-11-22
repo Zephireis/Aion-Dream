@@ -23,15 +23,20 @@ A full-stack timesheet and employee hour-tracking web application built with Nod
 <img width="1919" height="1079" alt="Screenshot 2026-11-21 190822" src="https://github.com/user-attachments/assets/181764f2-f8db-43af-a5ac-8e9bc50f1b90" />
 
 ### Homebase Keypad & Clock-In Flow
-![Homebase organization keypad screen](screenshots/Screenshot%202026-11-21%20190856.jpg)
-![Clock in action screen](screenshots/Screenshot%202026-11-21%20190922.jpg)
+<img width="1918" height="906" alt="Screenshot 2026-11-21 190856" src="https://github.com/user-attachments/assets/97d33742-aa01-49b9-aa58-5e11ec4766e2" />
 
-![PIN entry keypad with live clock](screenshots/Screenshot%202026-11-21%20190936.jpg)
+<img width="1903" height="908" alt="Screenshot 2026-11-21 190922" src="https://github.com/user-attachments/assets/7f0b3ba9-1eac-45d6-b75d-6a6a24be5132" />
+
+
+<img width="1903" height="907" alt="Screenshot 2026-11-21 190936" src="https://github.com/user-attachments/assets/c0988ca7-ef2f-4a6e-9ac8-245ce837cbc5" />
+
 
 ### Active Shift Clock-Out & Updated Timeclock Log
-![Clock out action screen](screenshots/Screenshot%202026-11-21%20190951.jpg)
+<img width="1902" height="908" alt="Screenshot 2026-11-21 190951" src="https://github.com/user-attachments/assets/3088f14a-a42d-4f7e-b24b-1463074bfae3" />
 
-![Employee dashboard showing updated hours, sessions, and timeclock log](screenshots/Screenshot%202026-11-21%20191015.png)
+
+<img width="1901" height="905" alt="Screenshot 2026-11-21 191015" src="https://github.com/user-attachments/assets/17785273-e18e-4ac0-a182-5c98985f99ed" />
+
 
 ## Project Structure
 
